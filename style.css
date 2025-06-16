@@ -1,19 +1,25 @@
-body{
+body{/*공통설정*/
   margin: 0; /* 바깥 여백 제거 */
   padding: 0; /* 안쪽 여백 제거 */
   height:100vh;
+  font-family:sans-serif;
+}
+
+.start-screen{
+  background-color:white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items:center;
-  font-family:sans-serif;
 }
-h1{
+
+.start-screen h1{
   font-size:64px;
   margin-bottom:40px;
 }
-button{
-  font-size: 24px;
+
+.start-screen button{
+   font-size: 24px;
   padding:10px 30px;
   cursor:pointer;
   background-color:blue;
@@ -22,6 +28,33 @@ button{
   transition:background-color 0.3s;
 }
 
-button:hover{
+.start-screen button hover{
   background-color:#0056b3;
+}
+  
+/*qpp only*/
+.app-screen{
+  display:flex;
+  justify-content:center;
+  align-itmes:center;
+  background-color:#f2f2f2;
+  flex-direction:column;
+}
+
+.app-icon{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.app-icon img {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.app-icon p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
 }
